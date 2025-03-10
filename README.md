@@ -44,6 +44,25 @@ display(sol[doti])
 display(sol[omegadot])
 
 
+### Penjelasan Kode
+
+1. **Definisi Simbol**:
+   - Mendefinisikan simbol-simbol yang diperlukan untuk perhitungan simbolik, termasuk variabel listrik dan mekanik.
+
+2. **Persamaan Listrik dan Mekanik**:
+   - Persamaan listrik: `L * doti + R * I - V + K * omega = 0`
+   - Persamaan mekanik: `J * omegadot + b * omega + K * I = 0`
+
+3. **Transformasi Laplace**:
+   - Melakukan transformasi Laplace pada persamaan listrik dan mekanik untuk mendapatkan representasi dalam domain s.
+
+4. **Penyelesaian Persamaan Diferensial**:
+   - Menggunakan `sp.solve` untuk menyelesaikan sistem persamaan diferensial dan mendapatkan solusi untuk `doti` dan `omegadot`.
+
+
+## Kesimpulan
+Kode ini menyediakan pendekatan lengkap untuk memodelkan motor DC secara simbolik, melakukan transformasi Laplace, dan menentukan fungsi alih hubungan antara kecepatan sudut (ω) dan tegangan (V). Ini dapat digunakan sebagai dasar untuk analisis dan desain sistem kontrol motor DC.
+
 
 
 
